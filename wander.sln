@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.002.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "wander", "wander.csproj", "{DFD77866-CB9F-4016-AB9B-8A872245586C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DFD77866-CB9F-4016-AB9B-8A872245586C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DFD77866-CB9F-4016-AB9B-8A872245586C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DFD77866-CB9F-4016-AB9B-8A872245586C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DFD77866-CB9F-4016-AB9B-8A872245586C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {216C9F5B-11E9-40EB-AEFE-709EC1B20C25}
+	EndGlobalSection
+EndGlobal
