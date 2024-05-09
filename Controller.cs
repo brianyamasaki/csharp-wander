@@ -47,8 +47,11 @@ class Controller {
     return this.gstate;
   }
 
+  public Boolean isValidDoor(Int32 room) {
+    return Array.FindIndex(this.gstate.doors, (val) => val == room) != -1;
+  }
+
   public void Move(Int32 toRoom) {
-    Console.WriteLine("Move to room ", toRoom);
     this.gstate.room = toRoom;
     this.gstate.warnings = warnings[toRoom];
     this.gstate.doors =  rooms[toRoom].doors;
@@ -56,9 +59,6 @@ class Controller {
   }
 
   public void Shoot(Int32 intoRoom) {
-    Console.WriteLine("Shoot room ", intoRoom);
-    this.gstate.warnings = warnings[intoRoom];
-    this.gstate.doors =  rooms[intoRoom].doors;
-    this.gstate.coins += 1;
+    Console.WriteLine("Not implemented - Shoot into room {0}", intoRoom);
   }
 }

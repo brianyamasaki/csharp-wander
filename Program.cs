@@ -34,16 +34,27 @@ class Program
         this.DisplayGState();
         Console.WriteLine("(M)ove to rooms, (S)hoot Arrow or (Q)uit ?");
         var command = Console.ReadLine();
+        Int32 room;
         if (command != null && command.Length > 0) {
             var tokens = command.Split(' ');
             switch (tokens[0][0]) {
                 case 'm':
                 case 'M':
-                    this.controller.Move(int.Parse(tokens[1]));
+                    room = int.Parse(tokens[1]);
+                    if (this.controller.isValidDoor(room)) {
+                        this.controller.Move(room);
+                    } else {
+                        Console.WriteLine("Invalid room");
+                    }
                     break;
                 case 's':
                 case 'S':
-                    this.controller.Shoot(int.Parse(tokens[1]));
+                    room = int.Parse(tokens[1]);
+                    if (this.controller.isValidDoor(room)) {
+                        this.controller.Shoot(int.Parse(tokens[1]));
+                    } else {
+                        Console.WriteLine("Invalid Room");
+                    }
                     break;
                 case 'q':
                 case 'Q':
